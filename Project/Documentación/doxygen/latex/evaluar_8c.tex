@@ -1,0 +1,211 @@
+\hypertarget{evaluar_8c}{}\section{Referencia del Archivo C\+:/\+Users/\+User Hp/\+Desktop/\+ProyectoC -\/ B\+E\+T\+A/\+Ultimo/evaluar.c}
+\label{evaluar_8c}\index{C\+:/\+Users/\+User Hp/\+Desktop/\+Proyecto\+C -\/ B\+E\+T\+A/\+Ultimo/evaluar.\+c@{C\+:/\+Users/\+User Hp/\+Desktop/\+Proyecto\+C -\/ B\+E\+T\+A/\+Ultimo/evaluar.\+c}}
+{\ttfamily \#include \char`\"{}lista.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pila.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+\subsection*{\textquotesingle{}defines\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{evaluar_8c_aede77dc7e489f91ffa67b4282a36c5f1}{E\+X\+P\+\_\+\+M\+A\+LF}~2
+\item 
+\#define \hyperlink{evaluar_8c_a44ed78c2d63e804a73617daeb405476c}{O\+P\+N\+D\+\_\+\+D\+E\+M\+AS}~5
+\item 
+\#define \hyperlink{evaluar_8c_a4b7a0b1dd760edc9497d933b35a74fb5}{O\+P\+N\+D\+\_\+\+I\+N\+S\+UF}~6
+\item 
+\#define \hyperlink{evaluar_8c_af45c472558db971911f7ca62a1c49408}{O\+P\+N\+D\+\_\+\+I\+NV}~7
+\item 
+\#define \hyperlink{evaluar_8c_a0f425a3806aaae326007e839b0770feb}{O\+P\+R\+D\+\_\+\+I\+NV}~8
+\item 
+\#define \hyperlink{evaluar_8c_aae7dd543d3f1bbe64fa3be5d82a2c88b}{D\+I\+V\+\_\+\+C\+E\+RO}~11
+\item 
+\#define \hyperlink{evaluar_8c_a775241e32b7ccb12e344ae23aa2db6b1}{F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}~12
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{evaluar_8c_a88ae22dc7ce05e82503402abbeaa87da}{es\+Numero} (char elem)
+\item 
+int \hyperlink{evaluar_8c_aa2807397a01fd552224d004d1d47adda}{es\+Operador} (char elem)
+\item 
+int \hyperlink{evaluar_8c_a6b577dfa0b09436341c19dc8c885396f}{es\+Blanco} (char elem)
+\item 
+int \hyperlink{evaluar_8c_a077c11c04129c56437ef74a50c99034a}{evaluar\+Expresion} (char $\ast$cadena)
+\item 
+int \hyperlink{evaluar_8c_a1c2e8225dd9548b5fdd4dc4060efdf4b}{suma} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} operandos)
+\item 
+int \hyperlink{evaluar_8c_af9cd89f6ebf21462846684a32701c8f8}{resta} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} operandos)
+\item 
+int \hyperlink{evaluar_8c_aed1dca7b7f4e940fa877c3c995ee7713}{division} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} operandos)
+\item 
+int \hyperlink{evaluar_8c_abf3422331735550ea0379cee1ce8caae}{producto} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} operandos)
+\item 
+int \hyperlink{evaluar_8c_a36ab09f980217d70eda38d4c59d6eb2d}{main} (int argc, char $\ast$argv \mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{evaluar_8c_abab914d9f3ddc46b16e3b1b14481f018}{op\+\_\+suma} =\textquotesingle{}+\textquotesingle{}
+\item 
+char \hyperlink{evaluar_8c_a9b16e4369e82870bc4f588a3cd9d34bb}{op\+\_\+resta} =\textquotesingle{}-\/\textquotesingle{}
+\item 
+char \hyperlink{evaluar_8c_a97664adb50efc1cb8e5b9b708d894331}{op\+\_\+producto} =\textquotesingle{}$\ast$\textquotesingle{}
+\item 
+char \hyperlink{evaluar_8c_a949b3e2ed0a66362e9d686854fd7f553}{op\+\_\+division} =\textquotesingle{}/\textquotesingle{}
+\item 
+char \hyperlink{evaluar_8c_a3ef8b0076956dc9d2209e955e62798c8}{par\+\_\+abre} =\textquotesingle{}(\textquotesingle{}
+\item 
+F\+I\+LE $\ast$ \hyperlink{evaluar_8c_ac9ba10bb072a106aac35f41b0d1dfb82}{entrada} =N\+U\+LL
+\item 
+F\+I\+LE $\ast$ \hyperlink{evaluar_8c_afc4f706ba30eab171f280c223f983582}{salida} =N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\hypertarget{evaluar_8c_aae7dd543d3f1bbe64fa3be5d82a2c88b}{}\label{evaluar_8c_aae7dd543d3f1bbe64fa3be5d82a2c88b} 
+\index{evaluar.\+c@{evaluar.\+c}!D\+I\+V\+\_\+\+C\+E\+RO@{D\+I\+V\+\_\+\+C\+E\+RO}}
+\index{D\+I\+V\+\_\+\+C\+E\+RO@{D\+I\+V\+\_\+\+C\+E\+RO}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{D\+I\+V\+\_\+\+C\+E\+RO}{DIV\_CERO}}
+{\footnotesize\ttfamily \#define D\+I\+V\+\_\+\+C\+E\+RO~11}
+
+\hypertarget{evaluar_8c_aede77dc7e489f91ffa67b4282a36c5f1}{}\label{evaluar_8c_aede77dc7e489f91ffa67b4282a36c5f1} 
+\index{evaluar.\+c@{evaluar.\+c}!E\+X\+P\+\_\+\+M\+A\+LF@{E\+X\+P\+\_\+\+M\+A\+LF}}
+\index{E\+X\+P\+\_\+\+M\+A\+LF@{E\+X\+P\+\_\+\+M\+A\+LF}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{E\+X\+P\+\_\+\+M\+A\+LF}{EXP\_MALF}}
+{\footnotesize\ttfamily \#define E\+X\+P\+\_\+\+M\+A\+LF~2}
+
+Codigos de terminacion del programa \hypertarget{evaluar_8c_a775241e32b7ccb12e344ae23aa2db6b1}{}\label{evaluar_8c_a775241e32b7ccb12e344ae23aa2db6b1} 
+\index{evaluar.\+c@{evaluar.\+c}!F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND@{F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}
+\index{F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND@{F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}{FILE\_NOT\_FOUND}}
+{\footnotesize\ttfamily \#define F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND~12}
+
+\hypertarget{evaluar_8c_a44ed78c2d63e804a73617daeb405476c}{}\label{evaluar_8c_a44ed78c2d63e804a73617daeb405476c} 
+\index{evaluar.\+c@{evaluar.\+c}!O\+P\+N\+D\+\_\+\+D\+E\+M\+AS@{O\+P\+N\+D\+\_\+\+D\+E\+M\+AS}}
+\index{O\+P\+N\+D\+\_\+\+D\+E\+M\+AS@{O\+P\+N\+D\+\_\+\+D\+E\+M\+AS}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{O\+P\+N\+D\+\_\+\+D\+E\+M\+AS}{OPND\_DEMAS}}
+{\footnotesize\ttfamily \#define O\+P\+N\+D\+\_\+\+D\+E\+M\+AS~5}
+
+\hypertarget{evaluar_8c_a4b7a0b1dd760edc9497d933b35a74fb5}{}\label{evaluar_8c_a4b7a0b1dd760edc9497d933b35a74fb5} 
+\index{evaluar.\+c@{evaluar.\+c}!O\+P\+N\+D\+\_\+\+I\+N\+S\+UF@{O\+P\+N\+D\+\_\+\+I\+N\+S\+UF}}
+\index{O\+P\+N\+D\+\_\+\+I\+N\+S\+UF@{O\+P\+N\+D\+\_\+\+I\+N\+S\+UF}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{O\+P\+N\+D\+\_\+\+I\+N\+S\+UF}{OPND\_INSUF}}
+{\footnotesize\ttfamily \#define O\+P\+N\+D\+\_\+\+I\+N\+S\+UF~6}
+
+\hypertarget{evaluar_8c_af45c472558db971911f7ca62a1c49408}{}\label{evaluar_8c_af45c472558db971911f7ca62a1c49408} 
+\index{evaluar.\+c@{evaluar.\+c}!O\+P\+N\+D\+\_\+\+I\+NV@{O\+P\+N\+D\+\_\+\+I\+NV}}
+\index{O\+P\+N\+D\+\_\+\+I\+NV@{O\+P\+N\+D\+\_\+\+I\+NV}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{O\+P\+N\+D\+\_\+\+I\+NV}{OPND\_INV}}
+{\footnotesize\ttfamily \#define O\+P\+N\+D\+\_\+\+I\+NV~7}
+
+\hypertarget{evaluar_8c_a0f425a3806aaae326007e839b0770feb}{}\label{evaluar_8c_a0f425a3806aaae326007e839b0770feb} 
+\index{evaluar.\+c@{evaluar.\+c}!O\+P\+R\+D\+\_\+\+I\+NV@{O\+P\+R\+D\+\_\+\+I\+NV}}
+\index{O\+P\+R\+D\+\_\+\+I\+NV@{O\+P\+R\+D\+\_\+\+I\+NV}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{O\+P\+R\+D\+\_\+\+I\+NV}{OPRD\_INV}}
+{\footnotesize\ttfamily \#define O\+P\+R\+D\+\_\+\+I\+NV~8}
+
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{evaluar_8c_aed1dca7b7f4e940fa877c3c995ee7713}{}\label{evaluar_8c_aed1dca7b7f4e940fa877c3c995ee7713} 
+\index{evaluar.\+c@{evaluar.\+c}!division@{division}}
+\index{division@{division}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{division()}{division()}}
+{\footnotesize\ttfamily int division (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{operandos }\end{DoxyParamCaption})}
+
+\hypertarget{evaluar_8c_a6b577dfa0b09436341c19dc8c885396f}{}\label{evaluar_8c_a6b577dfa0b09436341c19dc8c885396f} 
+\index{evaluar.\+c@{evaluar.\+c}!es\+Blanco@{es\+Blanco}}
+\index{es\+Blanco@{es\+Blanco}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{es\+Blanco()}{esBlanco()}}
+{\footnotesize\ttfamily int es\+Blanco (\begin{DoxyParamCaption}\item[{char}]{elem }\end{DoxyParamCaption})}
+
+\hypertarget{evaluar_8c_a88ae22dc7ce05e82503402abbeaa87da}{}\label{evaluar_8c_a88ae22dc7ce05e82503402abbeaa87da} 
+\index{evaluar.\+c@{evaluar.\+c}!es\+Numero@{es\+Numero}}
+\index{es\+Numero@{es\+Numero}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{es\+Numero()}{esNumero()}}
+{\footnotesize\ttfamily int es\+Numero (\begin{DoxyParamCaption}\item[{char}]{elem }\end{DoxyParamCaption})}
+
+Prototipos \hypertarget{evaluar_8c_aa2807397a01fd552224d004d1d47adda}{}\label{evaluar_8c_aa2807397a01fd552224d004d1d47adda} 
+\index{evaluar.\+c@{evaluar.\+c}!es\+Operador@{es\+Operador}}
+\index{es\+Operador@{es\+Operador}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{es\+Operador()}{esOperador()}}
+{\footnotesize\ttfamily int es\+Operador (\begin{DoxyParamCaption}\item[{char}]{elem }\end{DoxyParamCaption})}
+
+\hypertarget{evaluar_8c_a077c11c04129c56437ef74a50c99034a}{}\label{evaluar_8c_a077c11c04129c56437ef74a50c99034a} 
+\index{evaluar.\+c@{evaluar.\+c}!evaluar\+Expresion@{evaluar\+Expresion}}
+\index{evaluar\+Expresion@{evaluar\+Expresion}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{evaluar\+Expresion()}{evaluarExpresion()}}
+{\footnotesize\ttfamily int evaluar\+Expresion (\begin{DoxyParamCaption}\item[{char $\ast$}]{cadena }\end{DoxyParamCaption})}
+
+\hypertarget{evaluar_8c_a36ab09f980217d70eda38d4c59d6eb2d}{}\label{evaluar_8c_a36ab09f980217d70eda38d4c59d6eb2d} 
+\index{evaluar.\+c@{evaluar.\+c}!main@{main}}
+\index{main@{main}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Programa principal \hypertarget{evaluar_8c_abf3422331735550ea0379cee1ce8caae}{}\label{evaluar_8c_abf3422331735550ea0379cee1ce8caae} 
+\index{evaluar.\+c@{evaluar.\+c}!producto@{producto}}
+\index{producto@{producto}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{producto()}{producto()}}
+{\footnotesize\ttfamily int producto (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{operandos }\end{DoxyParamCaption})}
+
+\hypertarget{evaluar_8c_af9cd89f6ebf21462846684a32701c8f8}{}\label{evaluar_8c_af9cd89f6ebf21462846684a32701c8f8} 
+\index{evaluar.\+c@{evaluar.\+c}!resta@{resta}}
+\index{resta@{resta}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{resta()}{resta()}}
+{\footnotesize\ttfamily int resta (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{operandos }\end{DoxyParamCaption})}
+
+\hypertarget{evaluar_8c_a1c2e8225dd9548b5fdd4dc4060efdf4b}{}\label{evaluar_8c_a1c2e8225dd9548b5fdd4dc4060efdf4b} 
+\index{evaluar.\+c@{evaluar.\+c}!suma@{suma}}
+\index{suma@{suma}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{suma()}{suma()}}
+{\footnotesize\ttfamily int suma (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{operandos }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de las variables}
+\hypertarget{evaluar_8c_ac9ba10bb072a106aac35f41b0d1dfb82}{}\label{evaluar_8c_ac9ba10bb072a106aac35f41b0d1dfb82} 
+\index{evaluar.\+c@{evaluar.\+c}!entrada@{entrada}}
+\index{entrada@{entrada}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{entrada}{entrada}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ entrada =N\+U\+LL}
+
+Variables de archivos \hypertarget{evaluar_8c_a949b3e2ed0a66362e9d686854fd7f553}{}\label{evaluar_8c_a949b3e2ed0a66362e9d686854fd7f553} 
+\index{evaluar.\+c@{evaluar.\+c}!op\+\_\+division@{op\+\_\+division}}
+\index{op\+\_\+division@{op\+\_\+division}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{op\+\_\+division}{op\_division}}
+{\footnotesize\ttfamily char op\+\_\+division =\textquotesingle{}/\textquotesingle{}}
+
+\hypertarget{evaluar_8c_a97664adb50efc1cb8e5b9b708d894331}{}\label{evaluar_8c_a97664adb50efc1cb8e5b9b708d894331} 
+\index{evaluar.\+c@{evaluar.\+c}!op\+\_\+producto@{op\+\_\+producto}}
+\index{op\+\_\+producto@{op\+\_\+producto}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{op\+\_\+producto}{op\_producto}}
+{\footnotesize\ttfamily char op\+\_\+producto =\textquotesingle{}$\ast$\textquotesingle{}}
+
+\hypertarget{evaluar_8c_a9b16e4369e82870bc4f588a3cd9d34bb}{}\label{evaluar_8c_a9b16e4369e82870bc4f588a3cd9d34bb} 
+\index{evaluar.\+c@{evaluar.\+c}!op\+\_\+resta@{op\+\_\+resta}}
+\index{op\+\_\+resta@{op\+\_\+resta}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{op\+\_\+resta}{op\_resta}}
+{\footnotesize\ttfamily char op\+\_\+resta =\textquotesingle{}-\/\textquotesingle{}}
+
+\hypertarget{evaluar_8c_abab914d9f3ddc46b16e3b1b14481f018}{}\label{evaluar_8c_abab914d9f3ddc46b16e3b1b14481f018} 
+\index{evaluar.\+c@{evaluar.\+c}!op\+\_\+suma@{op\+\_\+suma}}
+\index{op\+\_\+suma@{op\+\_\+suma}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{op\+\_\+suma}{op\_suma}}
+{\footnotesize\ttfamily char op\+\_\+suma =\textquotesingle{}+\textquotesingle{}}
+
+\hypertarget{evaluar_8c_a3ef8b0076956dc9d2209e955e62798c8}{}\label{evaluar_8c_a3ef8b0076956dc9d2209e955e62798c8} 
+\index{evaluar.\+c@{evaluar.\+c}!par\+\_\+abre@{par\+\_\+abre}}
+\index{par\+\_\+abre@{par\+\_\+abre}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{par\+\_\+abre}{par\_abre}}
+{\footnotesize\ttfamily char par\+\_\+abre =\textquotesingle{}(\textquotesingle{}}
+
+\hypertarget{evaluar_8c_afc4f706ba30eab171f280c223f983582}{}\label{evaluar_8c_afc4f706ba30eab171f280c223f983582} 
+\index{evaluar.\+c@{evaluar.\+c}!salida@{salida}}
+\index{salida@{salida}!evaluar.\+c@{evaluar.\+c}}
+\subsubsection{\texorpdfstring{salida}{salida}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ salida =N\+U\+LL}
+

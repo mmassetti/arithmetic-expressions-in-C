@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProyectoC: Referencia del Archivo C:/Users/User Hp/Desktop/ProyectoC - BETA/Ultimo/evaluar.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProyectoC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_3bf866c02b1ecaea1c4bc34435cef54e.html">ProyectoC - BETA</a></li><li class="navelem"><a class="el" href="dir_0c52be978092459f39e0868b42b95bdb.html">Ultimo</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">'defines'</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo evaluar.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="lista_8h_source.html">lista.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pila_8h_source.html">pila.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &lt;getopt.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr class="memitem:aede77dc7e489f91ffa67b4282a36c5f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#aede77dc7e489f91ffa67b4282a36c5f1">EXP_MALF</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:aede77dc7e489f91ffa67b4282a36c5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ed78c2d63e804a73617daeb405476c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a44ed78c2d63e804a73617daeb405476c">OPND_DEMAS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a44ed78c2d63e804a73617daeb405476c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7a0b1dd760edc9497d933b35a74fb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a4b7a0b1dd760edc9497d933b35a74fb5">OPND_INSUF</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a4b7a0b1dd760edc9497d933b35a74fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45c472558db971911f7ca62a1c49408"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#af45c472558db971911f7ca62a1c49408">OPND_INV</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:af45c472558db971911f7ca62a1c49408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f425a3806aaae326007e839b0770feb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a0f425a3806aaae326007e839b0770feb">OPRD_INV</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a0f425a3806aaae326007e839b0770feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7dd543d3f1bbe64fa3be5d82a2c88b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#aae7dd543d3f1bbe64fa3be5d82a2c88b">DIV_CERO</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:aae7dd543d3f1bbe64fa3be5d82a2c88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775241e32b7ccb12e344ae23aa2db6b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a775241e32b7ccb12e344ae23aa2db6b1">FILE_NOT_FOUND</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:a775241e32b7ccb12e344ae23aa2db6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a88ae22dc7ce05e82503402abbeaa87da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a88ae22dc7ce05e82503402abbeaa87da">esNumero</a> (char elem)</td></tr>
+<tr class="separator:a88ae22dc7ce05e82503402abbeaa87da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2807397a01fd552224d004d1d47adda"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#aa2807397a01fd552224d004d1d47adda">esOperador</a> (char elem)</td></tr>
+<tr class="separator:aa2807397a01fd552224d004d1d47adda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b577dfa0b09436341c19dc8c885396f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a6b577dfa0b09436341c19dc8c885396f">esBlanco</a> (char elem)</td></tr>
+<tr class="separator:a6b577dfa0b09436341c19dc8c885396f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077c11c04129c56437ef74a50c99034a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a077c11c04129c56437ef74a50c99034a">evaluarExpresion</a> (char *cadena)</td></tr>
+<tr class="separator:a077c11c04129c56437ef74a50c99034a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2e8225dd9548b5fdd4dc4060efdf4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a1c2e8225dd9548b5fdd4dc4060efdf4b">suma</a> (<a class="el" href="lista_8h.html#a45a7fc8b27c75e5ffe928def5ecdce23">lista_t</a> operandos)</td></tr>
+<tr class="separator:a1c2e8225dd9548b5fdd4dc4060efdf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cd89f6ebf21462846684a32701c8f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#af9cd89f6ebf21462846684a32701c8f8">resta</a> (<a class="el" href="lista_8h.html#a45a7fc8b27c75e5ffe928def5ecdce23">lista_t</a> operandos)</td></tr>
+<tr class="separator:af9cd89f6ebf21462846684a32701c8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1dca7b7f4e940fa877c3c995ee7713"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#aed1dca7b7f4e940fa877c3c995ee7713">division</a> (<a class="el" href="lista_8h.html#a45a7fc8b27c75e5ffe928def5ecdce23">lista_t</a> operandos)</td></tr>
+<tr class="separator:aed1dca7b7f4e940fa877c3c995ee7713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3422331735550ea0379cee1ce8caae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#abf3422331735550ea0379cee1ce8caae">producto</a> (<a class="el" href="lista_8h.html#a45a7fc8b27c75e5ffe928def5ecdce23">lista_t</a> operandos)</td></tr>
+<tr class="separator:abf3422331735550ea0379cee1ce8caae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ab09f980217d70eda38d4c59d6eb2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a36ab09f980217d70eda38d4c59d6eb2d">main</a> (int argc, char *argv [])</td></tr>
+<tr class="separator:a36ab09f980217d70eda38d4c59d6eb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abab914d9f3ddc46b16e3b1b14481f018"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#abab914d9f3ddc46b16e3b1b14481f018">op_suma</a> ='+'</td></tr>
+<tr class="separator:abab914d9f3ddc46b16e3b1b14481f018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b16e4369e82870bc4f588a3cd9d34bb"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a9b16e4369e82870bc4f588a3cd9d34bb">op_resta</a> ='-'</td></tr>
+<tr class="separator:a9b16e4369e82870bc4f588a3cd9d34bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97664adb50efc1cb8e5b9b708d894331"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a97664adb50efc1cb8e5b9b708d894331">op_producto</a> ='*'</td></tr>
+<tr class="separator:a97664adb50efc1cb8e5b9b708d894331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949b3e2ed0a66362e9d686854fd7f553"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a949b3e2ed0a66362e9d686854fd7f553">op_division</a> ='/'</td></tr>
+<tr class="separator:a949b3e2ed0a66362e9d686854fd7f553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef8b0076956dc9d2209e955e62798c8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#a3ef8b0076956dc9d2209e955e62798c8">par_abre</a> ='('</td></tr>
+<tr class="separator:a3ef8b0076956dc9d2209e955e62798c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ba10bb072a106aac35f41b0d1dfb82"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#ac9ba10bb072a106aac35f41b0d1dfb82">entrada</a> =NULL</td></tr>
+<tr class="separator:ac9ba10bb072a106aac35f41b0d1dfb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4f706ba30eab171f280c223f983582"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluar_8c.html#afc4f706ba30eab171f280c223f983582">salida</a> =NULL</td></tr>
+<tr class="separator:afc4f706ba30eab171f280c223f983582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="aae7dd543d3f1bbe64fa3be5d82a2c88b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae7dd543d3f1bbe64fa3be5d82a2c88b">&sect;&nbsp;</a></span>DIV_CERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DIV_CERO&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aede77dc7e489f91ffa67b4282a36c5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede77dc7e489f91ffa67b4282a36c5f1">&sect;&nbsp;</a></span>EXP_MALF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXP_MALF&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Codigos de terminacion del programa </p>
+
+</div>
+</div>
+<a id="a775241e32b7ccb12e344ae23aa2db6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775241e32b7ccb12e344ae23aa2db6b1">&sect;&nbsp;</a></span>FILE_NOT_FOUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILE_NOT_FOUND&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44ed78c2d63e804a73617daeb405476c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ed78c2d63e804a73617daeb405476c">&sect;&nbsp;</a></span>OPND_DEMAS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPND_DEMAS&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b7a0b1dd760edc9497d933b35a74fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7a0b1dd760edc9497d933b35a74fb5">&sect;&nbsp;</a></span>OPND_INSUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPND_INSUF&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af45c472558db971911f7ca62a1c49408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af45c472558db971911f7ca62a1c49408">&sect;&nbsp;</a></span>OPND_INV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPND_INV&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f425a3806aaae326007e839b0770feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f425a3806aaae326007e839b0770feb">&sect;&nbsp;</a></span>OPRD_INV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPRD_INV&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="aed1dca7b7f4e940fa877c3c995ee7713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed1dca7b7f4e940fa877c3c995ee7713">&sect;&nbsp;</a></span>division()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int division </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="lista_8h.html#a45a7fc8b27c75e5ffe928def5ecdce23">lista_t</a>&#160;</td>
+          <td class="paramname"><em>operandos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b577dfa0b09436341c19dc8c885396f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b577dfa0b09436341c19dc8c885396f">&sect;&nbsp;</a></span>esBlanco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int esBlanco </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88ae22dc7ce05e82503402abbeaa87da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88ae22dc7ce05e82503402abbeaa87da">&sect;&nbsp;</a></span>esNumero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int esNumero </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prototipos </p>
+
+</div>
+</div>
+<a id="aa2807397a01fd552224d004d1d47adda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2807397a01fd552224d004d1d47adda">&sect;&nbsp;</a></span>esOperador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int esOperador </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a077c11c04129c56437ef74a50c99034a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077c11c04129c56437ef74a50c99034a">&sect;&nbsp;</a></span>evaluarExpresion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int evaluarExpresion </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cadena</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36ab09f980217d70eda38d4c59d6eb2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ab09f980217d70eda38d4c59d6eb2d">&sect;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Programa principal </p>
+
+</div>
+</div>
+<a id="abf3422331735550ea0379cee1ce8caae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf3422331735550ea0379cee1ce8caae">&sect;&nbsp;</a></span>producto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int producto </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="lista_8h.html#a45a7fc8b27c75e5ffe928def5ecdce23">lista_t</a>&#160;</td>
+          <td class="paramname"><em>operandos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9cd89f6ebf21462846684a32701c8f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cd89f6ebf21462846684a32701c8f8">&sect;&nbsp;</a></span>resta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int resta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="lista_8h.html#a45a7fc8b27c75e5ffe928def5ecdce23">lista_t</a>&#160;</td>
+          <td class="paramname"><em>operandos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c2e8225dd9548b5fdd4dc4060efdf4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2e8225dd9548b5fdd4dc4060efdf4b">&sect;&nbsp;</a></span>suma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int suma </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="lista_8h.html#a45a7fc8b27c75e5ffe928def5ecdce23">lista_t</a>&#160;</td>
+          <td class="paramname"><em>operandos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="ac9ba10bb072a106aac35f41b0d1dfb82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ba10bb072a106aac35f41b0d1dfb82">&sect;&nbsp;</a></span>entrada</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE* entrada =NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Variables de archivos </p>
+
+</div>
+</div>
+<a id="a949b3e2ed0a66362e9d686854fd7f553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949b3e2ed0a66362e9d686854fd7f553">&sect;&nbsp;</a></span>op_division</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char op_division ='/'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97664adb50efc1cb8e5b9b708d894331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97664adb50efc1cb8e5b9b708d894331">&sect;&nbsp;</a></span>op_producto</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char op_producto ='*'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b16e4369e82870bc4f588a3cd9d34bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b16e4369e82870bc4f588a3cd9d34bb">&sect;&nbsp;</a></span>op_resta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char op_resta ='-'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abab914d9f3ddc46b16e3b1b14481f018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab914d9f3ddc46b16e3b1b14481f018">&sect;&nbsp;</a></span>op_suma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char op_suma ='+'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ef8b0076956dc9d2209e955e62798c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef8b0076956dc9d2209e955e62798c8">&sect;&nbsp;</a></span>par_abre</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char par_abre ='('</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc4f706ba30eab171f280c223f983582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4f706ba30eab171f280c223f983582">&sect;&nbsp;</a></span>salida</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE* salida =NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

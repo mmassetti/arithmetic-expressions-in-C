@@ -1,0 +1,102 @@
+\hypertarget{pila_8h}{}\section{Referencia del Archivo C\+:/\+Users/\+User Hp/\+Desktop/\+ProyectoC -\/ B\+E\+T\+A/\+Ultimo/pila.h}
+\label{pila_8h}\index{C\+:/\+Users/\+User Hp/\+Desktop/\+Proyecto\+C -\/ B\+E\+T\+A/\+Ultimo/pila.\+h@{C\+:/\+Users/\+User Hp/\+Desktop/\+Proyecto\+C -\/ B\+E\+T\+A/\+Ultimo/pila.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\subsection*{Estructuras de datos}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpila}{pila}
+\end{DoxyCompactItemize}
+\subsection*{\textquotesingle{}defines\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{pila_8h_ab43040b7ea8526da08c3f19965ed3979}{E\+X\+I\+TO}~E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+SS
+\item 
+\#define \hyperlink{pila_8h_abb28dfd94877008d60186125e9316b03}{P\+I\+L\+\_\+\+N\+O\+\_\+\+I\+NI}~9
+\item 
+\#define \hyperlink{pila_8h_aa466bb01668ccc707243425a77ae2d9a}{P\+I\+L\+\_\+\+V\+A\+C\+IA}~10
+\end{DoxyCompactItemize}
+\subsection*{\textquotesingle{}typedefs\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structpila}{pila} $\ast$ \hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t} \hyperlink{pila_8h_a3e224ccbb74e69bd48ea0035c5be6a48}{pila\+\_\+crear} ()
+\item 
+char $\ast$ \hyperlink{pila_8h_aa7e57ea0bd5cbefcb17986e0d9cb371f}{tope} (\hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t} \hyperlink{structpila}{pila})
+\item 
+char $\ast$ \hyperlink{pila_8h_a8c60ee76ebfb2845e3f9a80d7c1f79e7}{desapilar} (\hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t} $\ast$\hyperlink{structpila}{pila})
+\item 
+int \hyperlink{pila_8h_a0ba2780fb8e6c549296a440b49ef2c6a}{apilar} (\hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t} $\ast$\hyperlink{structpila}{pila}, char $\ast$str)
+\item 
+int \hyperlink{pila_8h_a9d5d22ec3fd17f4a41913931f7804144}{pila\+\_\+vacia} (\hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t} \hyperlink{structpila}{pila})
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\hypertarget{pila_8h_ab43040b7ea8526da08c3f19965ed3979}{}\label{pila_8h_ab43040b7ea8526da08c3f19965ed3979} 
+\index{pila.\+h@{pila.\+h}!E\+X\+I\+TO@{E\+X\+I\+TO}}
+\index{E\+X\+I\+TO@{E\+X\+I\+TO}!pila.\+h@{pila.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+I\+TO}{EXITO}}
+{\footnotesize\ttfamily \#define E\+X\+I\+TO~E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+SS}
+
+Codigos de terminacion del programa \hypertarget{pila_8h_abb28dfd94877008d60186125e9316b03}{}\label{pila_8h_abb28dfd94877008d60186125e9316b03} 
+\index{pila.\+h@{pila.\+h}!P\+I\+L\+\_\+\+N\+O\+\_\+\+I\+NI@{P\+I\+L\+\_\+\+N\+O\+\_\+\+I\+NI}}
+\index{P\+I\+L\+\_\+\+N\+O\+\_\+\+I\+NI@{P\+I\+L\+\_\+\+N\+O\+\_\+\+I\+NI}!pila.\+h@{pila.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+L\+\_\+\+N\+O\+\_\+\+I\+NI}{PIL\_NO\_INI}}
+{\footnotesize\ttfamily \#define P\+I\+L\+\_\+\+N\+O\+\_\+\+I\+NI~9}
+
+\hypertarget{pila_8h_aa466bb01668ccc707243425a77ae2d9a}{}\label{pila_8h_aa466bb01668ccc707243425a77ae2d9a} 
+\index{pila.\+h@{pila.\+h}!P\+I\+L\+\_\+\+V\+A\+C\+IA@{P\+I\+L\+\_\+\+V\+A\+C\+IA}}
+\index{P\+I\+L\+\_\+\+V\+A\+C\+IA@{P\+I\+L\+\_\+\+V\+A\+C\+IA}!pila.\+h@{pila.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+L\+\_\+\+V\+A\+C\+IA}{PIL\_VACIA}}
+{\footnotesize\ttfamily \#define P\+I\+L\+\_\+\+V\+A\+C\+IA~10}
+
+
+
+\subsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\hypertarget{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{}\label{pila_8h_a553ad6b1c7326ac6b455b69af8536a37} 
+\index{pila.\+h@{pila.\+h}!pila\+\_\+t@{pila\+\_\+t}}
+\index{pila\+\_\+t@{pila\+\_\+t}!pila.\+h@{pila.\+h}}
+\subsubsection{\texorpdfstring{pila\+\_\+t}{pila\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structpila}{pila} $\ast$ \hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t}}
+
+Librerias Estructura de pila 
+
+\subsection{Documentación de las funciones}
+\hypertarget{pila_8h_a0ba2780fb8e6c549296a440b49ef2c6a}{}\label{pila_8h_a0ba2780fb8e6c549296a440b49ef2c6a} 
+\index{pila.\+h@{pila.\+h}!apilar@{apilar}}
+\index{apilar@{apilar}!pila.\+h@{pila.\+h}}
+\subsubsection{\texorpdfstring{apilar()}{apilar()}}
+{\footnotesize\ttfamily int apilar (\begin{DoxyParamCaption}\item[{\hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t} $\ast$}]{pila,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+Inserta el string str en el tope de la pila \hypertarget{pila_8h_a8c60ee76ebfb2845e3f9a80d7c1f79e7}{}\label{pila_8h_a8c60ee76ebfb2845e3f9a80d7c1f79e7} 
+\index{pila.\+h@{pila.\+h}!desapilar@{desapilar}}
+\index{desapilar@{desapilar}!pila.\+h@{pila.\+h}}
+\subsubsection{\texorpdfstring{desapilar()}{desapilar()}}
+{\footnotesize\ttfamily char$\ast$ desapilar (\begin{DoxyParamCaption}\item[{\hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t} $\ast$}]{pila }\end{DoxyParamCaption})}
+
+Elimina el string que se encuentra en el tope de la pila y lo retorna \hypertarget{pila_8h_a3e224ccbb74e69bd48ea0035c5be6a48}{}\label{pila_8h_a3e224ccbb74e69bd48ea0035c5be6a48} 
+\index{pila.\+h@{pila.\+h}!pila\+\_\+crear@{pila\+\_\+crear}}
+\index{pila\+\_\+crear@{pila\+\_\+crear}!pila.\+h@{pila.\+h}}
+\subsubsection{\texorpdfstring{pila\+\_\+crear()}{pila\_crear()}}
+{\footnotesize\ttfamily \hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t} pila\+\_\+crear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operaciones de pila Retorna una pila nueva vacia
+
+Operaciones de pila \hypertarget{pila_8h_a9d5d22ec3fd17f4a41913931f7804144}{}\label{pila_8h_a9d5d22ec3fd17f4a41913931f7804144} 
+\index{pila.\+h@{pila.\+h}!pila\+\_\+vacia@{pila\+\_\+vacia}}
+\index{pila\+\_\+vacia@{pila\+\_\+vacia}!pila.\+h@{pila.\+h}}
+\subsubsection{\texorpdfstring{pila\+\_\+vacia()}{pila\_vacia()}}
+{\footnotesize\ttfamily int pila\+\_\+vacia (\begin{DoxyParamCaption}\item[{\hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t}}]{pila }\end{DoxyParamCaption})}
+
+Retorna verdadero si la pila esta vacia, falso en caso contrario \hypertarget{pila_8h_aa7e57ea0bd5cbefcb17986e0d9cb371f}{}\label{pila_8h_aa7e57ea0bd5cbefcb17986e0d9cb371f} 
+\index{pila.\+h@{pila.\+h}!tope@{tope}}
+\index{tope@{tope}!pila.\+h@{pila.\+h}}
+\subsubsection{\texorpdfstring{tope()}{tope()}}
+{\footnotesize\ttfamily char$\ast$ tope (\begin{DoxyParamCaption}\item[{\hyperlink{pila_8h_a553ad6b1c7326ac6b455b69af8536a37}{pila\+\_\+t}}]{pila }\end{DoxyParamCaption})}
+
+Retorna el string que se encuentra en el tope de la pila 

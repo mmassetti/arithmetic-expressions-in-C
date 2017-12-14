@@ -1,0 +1,184 @@
+\hypertarget{lista_8h}{}\section{Referencia del Archivo C\+:/\+Users/\+User Hp/\+Desktop/\+ProyectoC -\/ B\+E\+T\+A/\+Ultimo/lista.h}
+\label{lista_8h}\index{C\+:/\+Users/\+User Hp/\+Desktop/\+Proyecto\+C -\/ B\+E\+T\+A/\+Ultimo/lista.\+h@{C\+:/\+Users/\+User Hp/\+Desktop/\+Proyecto\+C -\/ B\+E\+T\+A/\+Ultimo/lista.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\subsection*{Estructuras de datos}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcelda}{celda}
+\item 
+struct \hyperlink{structlista__eficiente}{lista\+\_\+eficiente}
+\end{DoxyCompactItemize}
+\subsection*{\textquotesingle{}defines\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lista_8h_ab43040b7ea8526da08c3f19965ed3979}{E\+X\+I\+TO}~E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+SS
+\item 
+\#define \hyperlink{lista_8h_ac73fe1a2102de13cb9097cecdffd12dc}{L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI}~3
+\item 
+\#define \hyperlink{lista_8h_a13d1f52c82b74429e1113b43678a7347}{L\+S\+T\+\_\+\+P\+O\+S\+\_\+\+I\+NV}~4
+\end{DoxyCompactItemize}
+\subsection*{\textquotesingle{}typedefs\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structcelda}{celda} \hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t}
+\item 
+typedef struct \hyperlink{structlista__eficiente}{lista\+\_\+eficiente} $\ast$ \hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t} $\ast$ \hyperlink{lista_8h_a75f865eeb5fed4f1110da103668c5218}{crear\+Celda} (int entero)
+\item 
+\hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t} $\ast$ \hyperlink{lista_8h_a62b424f88d35491eb9cffa323b995cd0}{obtener\+Celda} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} lista, int nro\+\_\+celda)
+\item 
+void \hyperlink{lista_8h_a72fefcf1076c09dd492019ecd6ae4a9f}{reacomodar\+Lista} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} lista, int indice, \hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t} $\ast$\hyperlink{structcelda}{celda})
+\item 
+void \hyperlink{lista_8h_ae1b907108a86788fbf4e8810eb9def8d}{destruir\+Celda} (\hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t} $\ast$\hyperlink{structcelda}{celda})
+\item 
+void \hyperlink{lista_8h_a469395bf208dc0d65339f0a6f0e2c22e}{destruir\+\_\+lista\+\_\+aux} (\hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t} $\ast$\hyperlink{structcelda}{celda})
+\item 
+int \hyperlink{lista_8h_a043d583391026c9384060eeca0cae70c}{cantidad\+\_\+celdas} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} lista)
+\item 
+\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} \hyperlink{lista_8h_a131f9e09ceb8d7bd7528047d8c052ec5}{lista\+\_\+crear} ()
+\item 
+int \hyperlink{lista_8h_a151481a44843aa5c8900f1e2d6b419c5}{lista\+\_\+insertar} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} lista, unsigned int pos, int elem)
+\item 
+int \hyperlink{lista_8h_a8e718cbb0b645be03f5709534d27f928}{lista\+\_\+eliminar} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} lista, unsigned int pos)
+\item 
+int \hyperlink{lista_8h_a9eb14fdf63c4e63efbc5ea196da32331}{lista\+\_\+cantidad} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} lista)
+\item 
+int \hyperlink{lista_8h_a4a419684e925fbb9578c61046d2388a0}{lista\+\_\+obtener} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} lista, unsigned int pos)
+\item 
+int \hyperlink{lista_8h_a107b666740c5e4deba7f99be9598a2f2}{lista\+\_\+adjuntar} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} lista, int elem)
+\item 
+int \hyperlink{lista_8h_aa099be21ba66f58a3bf96114ee20675b}{lista\+\_\+destruir} (\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} $\ast$lista)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentaci√≥n de los \textquotesingle{}defines\textquotesingle{}}
+\hypertarget{lista_8h_ab43040b7ea8526da08c3f19965ed3979}{}\label{lista_8h_ab43040b7ea8526da08c3f19965ed3979} 
+\index{lista.\+h@{lista.\+h}!E\+X\+I\+TO@{E\+X\+I\+TO}}
+\index{E\+X\+I\+TO@{E\+X\+I\+TO}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+I\+TO}{EXITO}}
+{\footnotesize\ttfamily \#define E\+X\+I\+TO~E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+SS}
+
+Codigos de terminacion del programa \hypertarget{lista_8h_ac73fe1a2102de13cb9097cecdffd12dc}{}\label{lista_8h_ac73fe1a2102de13cb9097cecdffd12dc} 
+\index{lista.\+h@{lista.\+h}!L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI@{L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI}}
+\index{L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI@{L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI}{LST\_NO\_INI}}
+{\footnotesize\ttfamily \#define L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI~3}
+
+\hypertarget{lista_8h_a13d1f52c82b74429e1113b43678a7347}{}\label{lista_8h_a13d1f52c82b74429e1113b43678a7347} 
+\index{lista.\+h@{lista.\+h}!L\+S\+T\+\_\+\+P\+O\+S\+\_\+\+I\+NV@{L\+S\+T\+\_\+\+P\+O\+S\+\_\+\+I\+NV}}
+\index{L\+S\+T\+\_\+\+P\+O\+S\+\_\+\+I\+NV@{L\+S\+T\+\_\+\+P\+O\+S\+\_\+\+I\+NV}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{L\+S\+T\+\_\+\+P\+O\+S\+\_\+\+I\+NV}{LST\_POS\_INV}}
+{\footnotesize\ttfamily \#define L\+S\+T\+\_\+\+P\+O\+S\+\_\+\+I\+NV~4}
+
+
+
+\subsection{Documentaci√≥n de los \textquotesingle{}typedefs\textquotesingle{}}
+\hypertarget{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{}\label{lista_8h_a0a1091d8fab370e7a9537f180ea892db} 
+\index{lista.\+h@{lista.\+h}!celda\+\_\+t@{celda\+\_\+t}}
+\index{celda\+\_\+t@{celda\+\_\+t}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{celda\+\_\+t}{celda\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structcelda}{celda}  \hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t}}
+
+Librerias Estructura de celda \hypertarget{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{}\label{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23} 
+\index{lista.\+h@{lista.\+h}!lista\+\_\+t@{lista\+\_\+t}}
+\index{lista\+\_\+t@{lista\+\_\+t}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+t}{lista\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structlista__eficiente}{lista\+\_\+eficiente} $\ast$ \hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}
+
+Estructura de lista eficiente 
+
+\subsection{Documentaci√≥n de las funciones}
+\hypertarget{lista_8h_a043d583391026c9384060eeca0cae70c}{}\label{lista_8h_a043d583391026c9384060eeca0cae70c} 
+\index{lista.\+h@{lista.\+h}!cantidad\+\_\+celdas@{cantidad\+\_\+celdas}}
+\index{cantidad\+\_\+celdas@{cantidad\+\_\+celdas}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{cantidad\+\_\+celdas()}{cantidad\_celdas()}}
+{\footnotesize\ttfamily int cantidad\+\_\+celdas (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{lista }\end{DoxyParamCaption})}
+
+Retorna la cantidad de celdas de la lista . \hypertarget{lista_8h_a75f865eeb5fed4f1110da103668c5218}{}\label{lista_8h_a75f865eeb5fed4f1110da103668c5218} 
+\index{lista.\+h@{lista.\+h}!crear\+Celda@{crear\+Celda}}
+\index{crear\+Celda@{crear\+Celda}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{crear\+Celda()}{crearCelda()}}
+{\footnotesize\ttfamily \hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t}$\ast$ crear\+Celda (\begin{DoxyParamCaption}\item[{int}]{entero }\end{DoxyParamCaption})}
+
+Definimos las signaturas de los metodos auxiliares . Reserva espacion en memoria para crear una celda y la retorna .
+
+Implementacion de metodos auxiliares. \hypertarget{lista_8h_a469395bf208dc0d65339f0a6f0e2c22e}{}\label{lista_8h_a469395bf208dc0d65339f0a6f0e2c22e} 
+\index{lista.\+h@{lista.\+h}!destruir\+\_\+lista\+\_\+aux@{destruir\+\_\+lista\+\_\+aux}}
+\index{destruir\+\_\+lista\+\_\+aux@{destruir\+\_\+lista\+\_\+aux}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{destruir\+\_\+lista\+\_\+aux()}{destruir\_lista\_aux()}}
+{\footnotesize\ttfamily void destruir\+\_\+lista\+\_\+aux (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t} $\ast$}]{celda }\end{DoxyParamCaption})}
+
+Recorre la lista y va eliminando las celdas recursivamente . \hypertarget{lista_8h_ae1b907108a86788fbf4e8810eb9def8d}{}\label{lista_8h_ae1b907108a86788fbf4e8810eb9def8d} 
+\index{lista.\+h@{lista.\+h}!destruir\+Celda@{destruir\+Celda}}
+\index{destruir\+Celda@{destruir\+Celda}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{destruir\+Celda()}{destruirCelda()}}
+{\footnotesize\ttfamily void destruir\+Celda (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t} $\ast$}]{celda }\end{DoxyParamCaption})}
+
+Realiza el free a una celda .
+
+Elimina una celda y libera el espacio asignado en memoria. \hypertarget{lista_8h_a107b666740c5e4deba7f99be9598a2f2}{}\label{lista_8h_a107b666740c5e4deba7f99be9598a2f2} 
+\index{lista.\+h@{lista.\+h}!lista\+\_\+adjuntar@{lista\+\_\+adjuntar}}
+\index{lista\+\_\+adjuntar@{lista\+\_\+adjuntar}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+adjuntar()}{lista\_adjuntar()}}
+{\footnotesize\ttfamily int lista\+\_\+adjuntar (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{lista,  }\item[{int}]{elem }\end{DoxyParamCaption})}
+
+Inserta el elemento elem en la ultima posicion de la lista. Si la lista no esta inicializada, aborta con exit status L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI. \hypertarget{lista_8h_a9eb14fdf63c4e63efbc5ea196da32331}{}\label{lista_8h_a9eb14fdf63c4e63efbc5ea196da32331} 
+\index{lista.\+h@{lista.\+h}!lista\+\_\+cantidad@{lista\+\_\+cantidad}}
+\index{lista\+\_\+cantidad@{lista\+\_\+cantidad}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+cantidad()}{lista\_cantidad()}}
+{\footnotesize\ttfamily int lista\+\_\+cantidad (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{lista }\end{DoxyParamCaption})}
+
+Retorna la cantidad de elementos de la lista. Si la lista no est· inicializada, el programa aborta con exit status L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI. \hypertarget{lista_8h_a131f9e09ceb8d7bd7528047d8c052ec5}{}\label{lista_8h_a131f9e09ceb8d7bd7528047d8c052ec5} 
+\index{lista.\+h@{lista.\+h}!lista\+\_\+crear@{lista\+\_\+crear}}
+\index{lista\+\_\+crear@{lista\+\_\+crear}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+crear()}{lista\_crear()}}
+{\footnotesize\ttfamily \hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} lista\+\_\+crear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operaciones de \hyperlink{structlista__eficiente}{lista\+\_\+eficiente} Crea una lista vacÌa y la retorna.
+
+Implementacion de metodos de lista. \hypertarget{lista_8h_aa099be21ba66f58a3bf96114ee20675b}{}\label{lista_8h_aa099be21ba66f58a3bf96114ee20675b} 
+\index{lista.\+h@{lista.\+h}!lista\+\_\+destruir@{lista\+\_\+destruir}}
+\index{lista\+\_\+destruir@{lista\+\_\+destruir}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+destruir()}{lista\_destruir()}}
+{\footnotesize\ttfamily int lista\+\_\+destruir (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t} $\ast$}]{lista }\end{DoxyParamCaption})}
+
+Libera la memoria ocupada por la lista y le asigna N\+U\+LL. Retorna verdadero en caso de exito. Si la lista no esta inicializadam aborta con exit status L\+S\+T\+\_\+\+N\+O\+\_\+\+I\+NI. \hypertarget{lista_8h_a8e718cbb0b645be03f5709534d27f928}{}\label{lista_8h_a8e718cbb0b645be03f5709534d27f928} 
+\index{lista.\+h@{lista.\+h}!lista\+\_\+eliminar@{lista\+\_\+eliminar}}
+\index{lista\+\_\+eliminar@{lista\+\_\+eliminar}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+eliminar()}{lista\_eliminar()}}
+{\footnotesize\ttfamily int lista\+\_\+eliminar (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{lista,  }\item[{unsigned int}]{pos }\end{DoxyParamCaption})}
+
+Elimina el elemento en la posicion pos. Reacomoda la lista adecuadamente al eliminar en posiciones intermedias. Retorna verdadero si procede con Èxito, falso en caso contrario. Si la posicion no es v·lida, aborta con exit status L\+S\+T\+\_\+\+P\+O\+S\+\_\+\+I\+NV. \hypertarget{lista_8h_a151481a44843aa5c8900f1e2d6b419c5}{}\label{lista_8h_a151481a44843aa5c8900f1e2d6b419c5} 
+\index{lista.\+h@{lista.\+h}!lista\+\_\+insertar@{lista\+\_\+insertar}}
+\index{lista\+\_\+insertar@{lista\+\_\+insertar}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+insertar()}{lista\_insertar()}}
+{\footnotesize\ttfamily int lista\+\_\+insertar (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{lista,  }\item[{unsigned int}]{pos,  }\item[{int}]{elem }\end{DoxyParamCaption})}
+
+Inserte el elemento elem en la posicion pos de la lista. Sobrescribe el valor existente en la posicion indicada, o agrega un nuevo elemento si la posiciÛn coincide con la cantidad de elementos. Si procede exitosamente retorna verdadero.\+En otro caso retorna falso. \hypertarget{lista_8h_a4a419684e925fbb9578c61046d2388a0}{}\label{lista_8h_a4a419684e925fbb9578c61046d2388a0} 
+\index{lista.\+h@{lista.\+h}!lista\+\_\+obtener@{lista\+\_\+obtener}}
+\index{lista\+\_\+obtener@{lista\+\_\+obtener}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+obtener()}{lista\_obtener()}}
+{\footnotesize\ttfamily int lista\+\_\+obtener (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{lista,  }\item[{unsigned int}]{pos }\end{DoxyParamCaption})}
+
+Retorna el elemento en la posicion pos de la lista. Si la posicion no es valida, aborta con exit status L\+S\+T\+\_\+\+P\+O\+S\+\_\+\+I\+NV. \hypertarget{lista_8h_a62b424f88d35491eb9cffa323b995cd0}{}\label{lista_8h_a62b424f88d35491eb9cffa323b995cd0} 
+\index{lista.\+h@{lista.\+h}!obtener\+Celda@{obtener\+Celda}}
+\index{obtener\+Celda@{obtener\+Celda}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{obtener\+Celda()}{obtenerCelda()}}
+{\footnotesize\ttfamily \hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t}$\ast$ obtener\+Celda (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{lista,  }\item[{int}]{nro\+\_\+celda }\end{DoxyParamCaption})}
+
+Retorna la celda en la posicion indicada , es utilizada por los metodos insertar y eliminar .
+
+Retorna la celda creada en la posicion nro\+\_\+celda. \hypertarget{lista_8h_a72fefcf1076c09dd492019ecd6ae4a9f}{}\label{lista_8h_a72fefcf1076c09dd492019ecd6ae4a9f} 
+\index{lista.\+h@{lista.\+h}!reacomodar\+Lista@{reacomodar\+Lista}}
+\index{reacomodar\+Lista@{reacomodar\+Lista}!lista.\+h@{lista.\+h}}
+\subsubsection{\texorpdfstring{reacomodar\+Lista()}{reacomodarLista()}}
+{\footnotesize\ttfamily void reacomodar\+Lista (\begin{DoxyParamCaption}\item[{\hyperlink{lista_8h_a45a7fc8b27c75e5ffe928def5ecdce23}{lista\+\_\+t}}]{lista,  }\item[{int}]{indice,  }\item[{\hyperlink{lista_8h_a0a1091d8fab370e7a9537f180ea892db}{celda\+\_\+t} $\ast$}]{celda }\end{DoxyParamCaption})}
+
+Reacomoda la lista luego de una eliminacion .
+
+Luego de eliminar una posicion de la lista se utiliza este metodo para acomodar las posiciones con sus respectivos elementos en la lista. 

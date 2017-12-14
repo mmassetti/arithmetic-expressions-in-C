@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProyectoC: Fichero Fuente C:/Users/User Hp/Desktop/ProyectoC - BETA/Ultimo/pila.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProyectoC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_3bf866c02b1ecaea1c4bc34435cef54e.html">ProyectoC - BETA</a></li><li class="navelem"><a class="el" href="dir_0c52be978092459f39e0868b42b95bdb.html">Ultimo</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pila.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pila_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _PILA_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _PILA_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="comment">//Terminacion exitosa</span></div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="pila_8h.html#ab43040b7ea8526da08c3f19965ed3979">    7</a></span>&#160;<span class="preprocessor">    #define EXITO EXIT_SUCCESS</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">//Pila sin inicializar</span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="pila_8h.html#abb28dfd94877008d60186125e9316b03">    9</a></span>&#160;<span class="preprocessor">    #define PIL_NO_INI 9</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">//La pila se encuentra vacia</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="pila_8h.html#aa466bb01668ccc707243425a77ae2d9a">   11</a></span>&#160;<span class="preprocessor">    #define PIL_VACIA 10</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    #include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structpila.html">   19</a></span>&#160;    <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpila.html">pila</a> {</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structpila.html#a631cf34474d00b9cb6bf64417c99033f">   20</a></span>&#160;        <span class="keywordtype">char</span>* <a class="code" href="structpila.html#a631cf34474d00b9cb6bf64417c99033f">elemento</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structpila.html#a34876762e0ba6bfdf95ba7fb3f3734d8">   21</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structpila.html">pila</a>* <a class="code" href="structpila.html#a34876762e0ba6bfdf95ba7fb3f3734d8">proximo_elemento</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    } *<a class="code" href="pila_8h.html#a553ad6b1c7326ac6b455b69af8536a37">pila_t</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="structpila.html">pila_t</a> <a class="code" href="pila_8h.html#a3e224ccbb74e69bd48ea0035c5be6a48">pila_crear</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="pila_8h.html#aa7e57ea0bd5cbefcb17986e0d9cb371f">tope</a> (<a class="code" href="structpila.html">pila_t</a> <a class="code" href="structpila.html">pila</a>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="pila_8h.html#a8c60ee76ebfb2845e3f9a80d7c1f79e7">desapilar</a>(<a class="code" href="structpila.html">pila_t</a>* <a class="code" href="structpila.html">pila</a>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="pila_8h.html#a0ba2780fb8e6c549296a440b49ef2c6a">apilar</a>(<a class="code" href="structpila.html">pila_t</a>* <a class="code" href="structpila.html">pila</a>, <span class="keywordtype">char</span>* str);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="pila_8h.html#a9d5d22ec3fd17f4a41913931f7804144">pila_vacia</a> (<a class="code" href="structpila.html">pila_t</a> <a class="code" href="structpila.html">pila</a>); <span class="comment">//Retorna verdadero si la pila esta vacia, falso en caso contrario</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="pila_8h_html_a9d5d22ec3fd17f4a41913931f7804144"><div class="ttname"><a href="pila_8h.html#a9d5d22ec3fd17f4a41913931f7804144">pila_vacia</a></div><div class="ttdeci">int pila_vacia(pila_t pila)</div><div class="ttdef"><b>Definition:</b> pila.c:52</div></div>
+<div class="ttc" id="pila_8h_html_a3e224ccbb74e69bd48ea0035c5be6a48"><div class="ttname"><a href="pila_8h.html#a3e224ccbb74e69bd48ea0035c5be6a48">pila_crear</a></div><div class="ttdeci">pila_t pila_crear()</div><div class="ttdef"><b>Definition:</b> pila.c:5</div></div>
+<div class="ttc" id="pila_8h_html_aa7e57ea0bd5cbefcb17986e0d9cb371f"><div class="ttname"><a href="pila_8h.html#aa7e57ea0bd5cbefcb17986e0d9cb371f">tope</a></div><div class="ttdeci">char * tope(pila_t pila)</div><div class="ttdef"><b>Definition:</b> pila.c:9</div></div>
+<div class="ttc" id="pila_8h_html_a0ba2780fb8e6c549296a440b49ef2c6a"><div class="ttname"><a href="pila_8h.html#a0ba2780fb8e6c549296a440b49ef2c6a">apilar</a></div><div class="ttdeci">int apilar(pila_t *pila, char *str)</div><div class="ttdef"><b>Definition:</b> pila.c:37</div></div>
+<div class="ttc" id="structpila_html"><div class="ttname"><a href="structpila.html">pila</a></div><div class="ttdef"><b>Definition:</b> pila.h:19</div></div>
+<div class="ttc" id="structpila_html_a631cf34474d00b9cb6bf64417c99033f"><div class="ttname"><a href="structpila.html#a631cf34474d00b9cb6bf64417c99033f">pila::elemento</a></div><div class="ttdeci">char * elemento</div><div class="ttdef"><b>Definition:</b> pila.h:20</div></div>
+<div class="ttc" id="structpila_html_a34876762e0ba6bfdf95ba7fb3f3734d8"><div class="ttname"><a href="structpila.html#a34876762e0ba6bfdf95ba7fb3f3734d8">pila::proximo_elemento</a></div><div class="ttdeci">struct pila * proximo_elemento</div><div class="ttdef"><b>Definition:</b> pila.h:21</div></div>
+<div class="ttc" id="pila_8h_html_a8c60ee76ebfb2845e3f9a80d7c1f79e7"><div class="ttname"><a href="pila_8h.html#a8c60ee76ebfb2845e3f9a80d7c1f79e7">desapilar</a></div><div class="ttdeci">char * desapilar(pila_t *pila)</div><div class="ttdef"><b>Definition:</b> pila.c:20</div></div>
+<div class="ttc" id="pila_8h_html_a553ad6b1c7326ac6b455b69af8536a37"><div class="ttname"><a href="pila_8h.html#a553ad6b1c7326ac6b455b69af8536a37">pila_t</a></div><div class="ttdeci">struct pila * pila_t</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>
