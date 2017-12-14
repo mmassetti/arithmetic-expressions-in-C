@@ -6,3 +6,5 @@ To achieve this we implemented the following:
 -A List ADT (Abstract Data Type), using dynamic memory with the library functions malloc and free
 -A Stack ADT, to storage strings 
 -A program that evaluates arithmetic expressions in pre-order, on the standar input and with the help of the two ADT above
+
+Authors: Matias Massetti - Gaetano Privitello - Santiago Vazquez
